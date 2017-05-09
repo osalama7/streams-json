@@ -1,3 +1,7 @@
+//this data structure would be more straight forward to parse
+//Provides less reliability on hardcoded lookups
+//if it's possible to merge two data structures on contentful, or as a separate
+//utility function it would be more practical
 let contentTypes = {
     "tab_news": {
         "SimpleNews": 'rawContent',
@@ -21,6 +25,7 @@ let contentTypes = {
     }
 };
 
+//currently used data structures
 const rendererToDataSource = {
     SimpleNews : 'rawContent',
     YouTube : 'rawContent',
@@ -31,8 +36,6 @@ const rendererToDataSource = {
     YouUnlocked : 'youUnlockedDB',
     StackedYouUnlocked : 'youUnlockedDB'
 };
-
-
 
 const STREAMDB = {
     SimpleNews : ContentService,
